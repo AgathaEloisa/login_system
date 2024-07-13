@@ -1,0 +1,14 @@
+<div class="card w-100 w-md-100 w-lg-75" style="max-width: 540px;">
+  <div class="card-header text-center bg-info-subtle">
+    <h1>Login System</h1>
+  </div>
+  <div class="card-body px-5 py-4">
+    <form class="user-data">
+      <app-inpt [name]="'Nombre'" [type]="'text'" [id]="'userName'" [errText]="'Debe ingresar un texto válido'" [placeholder]="'Escriba su nombre'"></app-inpt>
+      <app-inpt [name]="'Apellidos'" [type]="'text'" [id]="'usserLastName'" [errText]="'Debe ingresar un texto válido'" [placeholder]="'Escriba sus apellidos'"></app-inpt>
+      <app-inpt [name]="'Linkedin'" [type]="'text'" [id]="'userLinkedinUrl'" [errText]="'Link a Linkedin inválido'" [placeholder]="'URL de su Linkedin'"></app-inpt>
+      
+      <button type="submit" class="btn btn-primary" id="addNewUserBtn">Enviar</button>
+    </form>
+  </div>
+</div>
